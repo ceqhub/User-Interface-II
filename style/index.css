@@ -19,6 +19,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
+	border:0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,7 +50,6 @@ table {
     padding: 0;
     margin: 0;
     max-width: 100%;
-    border:1px solid grey;
 }
 /*general selector*/
 html{
@@ -58,7 +58,7 @@ html{
 body{
     font-size:1.6rem;
     line-height:1.5;
-    background-color: #ffffff;
+    background-color:black;
     color: #000000;
 }
 h1{
@@ -66,16 +66,23 @@ h1{
 	font-family: 'Oswald', sans-serif;
 	color:white;
 }
+h2{
+	font-size:20px;
+	font-family: 'oswald';
+	color:whitesmoke;
+}
+/*button*/
+
 /*helper Classes*/
 .bgimg{
 	background-size:cover;
-	background-repeat: no-repeat;
+	background-repeat:no-repeat;
 }
 /*headerStyling*/
 nav{
 	display: flex;
 	justify-content: space-between;
-	
+	background-color: rgba(red, green, blue, 0.7);
 }
 .logo{
 	width:10%;
@@ -87,24 +94,28 @@ nav{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	
 }
 .links a{
 	font:10px;
 	width:50%;
-	padding:0% 0;
+	padding:1% 0;
 	margin:0% 0;
 	text-align: center;
-	background-color: rgba(255, 255, 255, 0.7);
+	text-decoration: none;
+
 }
 .links a:hover{
-	background-color:;
-	color:teal;
-	transition: 0.3s;
+	color:rgb(94, 93, 91);
+	background-color:whitesmoke;
+	transition: 1s;
 }
+
 /*TopStyling*/
 #top{
-	height:50vh;
-	margin: 5% 10%;
+	height:40vh;
+	margin: 10px 15%;
+	width:70%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -112,21 +123,71 @@ nav{
 	background-image: url(../images/top.jpg);
 }
 /*about*/
-#about{
-	display:flex;
-	height:10px;
-	flex-flow: wrap;
+#about{	
+	margin:5px 5%;
+	height: 80vh;
+}
+.about div{
+	width: 90%;
+	display: flex;
+}
+.img{
+	display: flex;
+	width:250px;
+	height:220px;
 	justify-content: space-evenly;
 }
-#about div{
-	width:25%;
-	height:150px;
-	margin:5% 0;
+.imagerow1{
+	display:flex;
+	margin-top: 5%;
+	gap:10%;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.textrow1{
+	margin:5px;
+	display: flex;
+	gap: 20%;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.imagerow2{
+	display:flex;
+	height:10vh;
+	margin:10% 0 5% 0;
+	gap:10%;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.textrow2{
+	display: flex;
+	margin:5px 5px;
+	display: flex;
+	gap: 20%;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
-
-
+button{
+	display:inline-block; 
+	width:20%;
+	padding:0.5% 1%;
+	text-align:center;
+	border-radius:10px;
+	background-color:#000;
+	color:grey;
+	text-decoration:none;
+	transition:2s;
+  }
+  button:hover{
+	border:1px solid grey;
+	background-color:white;
+	color:#000;
+  }
+  
 footer{
+	margin-top: 0;
+	padding:0%;
 	text-align: center;
 }
 
