@@ -1,1 +1,195 @@
-/* Add CSS styling here */
+/*CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border:0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*universal selector to see whole page start and stop*/
+*{
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+/*general selector*/
+html{
+    62.5%;
+}
+body{
+    font-size:1.6rem;
+    line-height:1.5;
+    background-color: white;
+    color: #000000;
+}
+h1{
+	font-size:2rem;
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	text-shadow: 2px 2px #fff;
+	  
+}
+h2{
+	font-size:1rem;
+	font-family: 'oswald';
+	color:black;
+}
+/*button*/
+
+/*helper Classes*/
+.bgimg{
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+/*headerStyling*/
+nav {
+	margin: 20px;
+	display:flex;
+	justify-content: space-between;
+	padding: 1px;
+  }
+  
+  .topsection{
+	display:flex;
+	justify-content: center;
+  }
+  
+  .image-button {
+	background-image: url("https://picsum.photos/1100/500");
+	background-repeat: no-repeat;
+	background-cover: cover;
+	color: #FFFFFF;
+	font-size: large;
+	width: 600px;
+	height: 400px; 
+  }
+  button{
+	margin-top: 1px;
+	background-color: black;
+	color: white;
+	border: black solid 1px;
+	padding: 5px 12px;
+	transition: 2s;
+	
+  }
+  button:hover{
+	background-color: white;
+	color: black;
+	border: black solid 1px;
+  }
+   
+  button a{
+	text-decoration: none;
+	color: inherit;
+	
+	
+  }
+  footer{
+	background: lightgrey;
+	padding: 20px;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+  }
+  
+  .row {
+	display:flex;
+	justify-content: space-evenly;
+	padding: 20px;
+  }
+  
+  .portfolio-element{
+	text-align: center;
+  }
+  
+  p{
+	  font-size: 60%;
+	  font-family: 'oswald';
+  }
+
+  /*when the screen size reaches 800px or smaller these rules apply*/
+@media (max-width: 800px){
+	.row {
+		margin-top: 5%;
+		display:flex;
+		justify-content: space-evenly;
+		gap:10%;
+	  }
+	
+	  footer{
+		  margin: 5% 5%;
+	  }
+}
+
+  /*when the screen size reaches 800px or smaller these rules apply*/
+@media (max-width: 500px){
+	h1{
+		font-size: 1rem;
+	}
+	nav {
+		width:100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.image-button {
+		background-image: url("https://picsum.photos/1100/500");
+		background-repeat: no-repeat;
+		background-cover: cover;
+		color: #FFFFFF;
+		font-size: large;
+		width: 400px;
+		height: 550px; 
+	  }
+	button {
+		width: 100%;
+		margin-top:1%; 
+		background-color: white;
+		border:black;
+		color: black;
+		padding: 0;
+		transition: 1s;
+	}
+	button a{
+	font-size: small;
+	}
